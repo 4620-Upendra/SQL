@@ -1,5 +1,5 @@
 -- day 3:
--- topic:  DDL – Data Definition Language Commands
+-- topic:  DDL – Data Definition Language Commands:Used to define, modify, or remove the structure of databases, tables, and indexes.
 
 -- type 1) create:Create a database, table, or index
 

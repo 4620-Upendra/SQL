@@ -1,4 +1,4 @@
--- topic:DML – Data Manipulation Language
+-- topic:DML – Data Manipulation Language:Used to insert, update, and delete data in tables.
 -- type 1)INSERT – Add new rows 
 -- i)   Single row
 INSERT INTO Students (StudentID, Name, Age, Email)
