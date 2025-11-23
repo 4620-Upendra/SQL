@@ -55,6 +55,10 @@ select max(salary) as MaximumSalary from employees1;
  -- iv)substring:Extract substring  (index starts from 1 and end index includes)
  select name,substr(name,1,3) as ShortName from employees1;
  
+ -- Extract last word from sentence:'Welcome to SQL World' → 'World'
+select substring_index('Welcome to SQL World',' ',-1) as last_word;
+
+ 
  -- v)concat():Join strings
  select concat(name,' works in ',department) as Info from employees1;
  
@@ -70,8 +74,8 @@ select max(salary) as MaximumSalary from employees1;
  select name,left(name,2) as FirstTwoLetter from employees1;
  select name,right(name,2) as LastTwoLetter from employees1;
  
- -- ix)instr() / charindex(): Find position :instr(string,string to find)
- select instr("Hello Sql","Sql") as position;
+ -- ix)instr() / charindex(): Find position :instr(string,string to find)  
+ select instr("Hello Sql","Sql") as position;   -- if it finds means give index or not found means gives 0
   
  -- x)lpad():Pad left side
  select lpad(name,10,'*') as LPaddedName from employees1;
